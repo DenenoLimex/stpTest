@@ -15,4 +15,13 @@ public class MainClassTest {
     public void testGetClassNumber() {
         Assert.assertTrue(mainClass.getClassNumber() + " <= 45", mainClass.getClassNumber() > 45);
     }
+
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue(
+                mainClass.getClassString() + " not contains \"Hello\" or \"hello\"",
+                mainClass.getClassString().contains("hello")
+                        || mainClass.getClassString().contains("Hello")
+        );
+    }
 }
