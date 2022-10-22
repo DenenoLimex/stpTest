@@ -10,4 +10,9 @@ public class MainClassTest {
     public void testGetLocalNumber() {
         Assert.assertTrue(mainClass.getLocalNumber() + " != 14", mainClass.getLocalNumber() == 14);
     }
+
+    @Test
+    public void testGetClassNumber() {
+        Assert.assertTrue(mainClass.getClassNumber() + " <= 45", mainClass.getClassNumber() > 45);
+    }
 }
